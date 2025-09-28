@@ -114,12 +114,15 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Küçük telefonlar için (max 480px) */
+@media (max-width: 480px) {
   .blog-container {
-    flex-direction: column-reverse;
+    flex-direction: column;   /* Görsel yukarıda, yazı aşağıda */
+    justify-content: center;
+    align-items: center;
     text-align: center;
     gap: 30px;
+    min-height: 100vh;
   }
 
   .blog-text .highlight {
@@ -135,4 +138,10 @@
     justify-content: center;
   }
 
+  .blog-image {
+    margin-left: 0;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
 }
+
