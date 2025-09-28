@@ -1,0 +1,137 @@
+.blog-section {
+  background: #111;
+  color: #f9fafb;
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-text {
+  flex: 1;
+  min-width: 320px;
+}
+
+/* Highlight başlık */
+.blog-text .highlight {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 12px;
+  display: block;
+  line-height: 1.2;
+  min-height: 2.4rem; /* sabit yükseklik */
+}
+
+.blog-text .animated-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: monospace;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  min-height: 3.6rem; /* en uzun yazıya göre sabit yükseklik */
+}
+
+.blog-text .description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #d1d5db;
+  min-height: 4.5rem; /* sabit alan verildi */
+}
+
+
+.blog-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #d1d5db;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.btn.secondary {
+  border: 2px solid #3b82f6;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+
+/* Görsel Alanı */
+.blog-image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #1f2937;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .blog-text .highlight {
+    font-size: 1.6rem;
+  }
+
+  .blog-text .animated-text {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
