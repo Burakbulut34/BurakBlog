@@ -143,5 +143,8 @@
     max-width: 90%;
     margin-bottom: 20px;
   }
+  .blog-text .description{
+    text-align: center;
+  }
 }
 
