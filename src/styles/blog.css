@@ -202,9 +202,9 @@
     gap: 0.75rem;
   }
 
-  .btn {
-    width: 100%;      /* butonlar tam genişlik */
-    max-width: 280px; /* çok genişlemeyi engelle */
-    margin: 0 auto;
+   .btn {
+    flex: 1 1 auto;
+    min-width: 120px;  /* küçük ekran için buton daralabilir */
+    max-width: 45%;    /* iki buton yan yana rahat sığsın */
   }
 }
