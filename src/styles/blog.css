@@ -48,12 +48,20 @@
 }
 
 .blog-text .description {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 30px;
+  display: block;
+  text-align: justify;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  margin: 0 auto; /* ortalamak için */
+  
+  /* responsive ölçüler */
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(0.95rem, 1vw + 0.5rem, 1.2rem);
+  line-height: 1.6;
   color: #d1d5db;
-  min-height: 4.5rem; /* sabit alan verildi */
 }
+
 
 
 .blog-text p {
@@ -115,7 +123,7 @@
 }
 
 /* Küçük telefonlar için (max 480px) */
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   .blog-container {
     flex-direction: column;   /* Görsel yukarıda, yazı aşağıda */
     justify-content: center;
@@ -143,8 +151,21 @@
     max-width: 90%;
     margin-bottom: 20px;
   }
-  .blog-text .description{
-    text-align: center;
+}
+
+/* tablet ve üstü ekranlarda */
+@media (min-width: 768px) {
+  .blog-text .description {
+    width: 80%;
+    max-width: 60ch; /* satır uzunluğu göz yormasın */
+  }
+}
+
+/* büyük ekranlarda */
+@media (min-width: 1200px) {
+  .blog-text .description {
+    width: 60%;
+    max-width: 55ch;
   }
 }
 
