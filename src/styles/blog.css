@@ -167,3 +167,44 @@
     font-size: 0.95rem;
   }
 }
+
+
+@media (max-width: 387px) {
+  .blog-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem; /* kenar boşluklarını daralt */
+  }
+
+  .blog-image img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .highlight {
+    font-size: 2rem;   /* başlığı küçült */
+  }
+
+  .animated-text {
+    font-size: 1.2rem; /* animasyonlu yazıyı küçült */
+    min-height: 1.8rem; /* sabit yükseklik, kayma engeli */
+    line-height: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.85rem; /* açıklamayı daha okunabilir hale getir */
+    line-height: 1.5;
+    padding: 0 0.5rem;
+  }
+
+  .buttons {
+    flex-direction: column; /* butonları alt alta al */
+    gap: 0.75rem;
+  }
+
+  .btn {
+    width: 100%;      /* butonlar tam genişlik */
+    max-width: 280px; /* çok genişlemeyi engelle */
+    margin: 0 auto;
+  }
+}
