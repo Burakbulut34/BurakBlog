@@ -66,6 +66,7 @@ export const projectsData = [
     image: Projectİmg3,
     type: "web",
     githubUrl: "https://github.com/Burakbulut34/Responsive-Modern-Site",
+    live: "https://burak-ofis-resonsive-site.vercel.app/"
   },
   {
     id: 4,

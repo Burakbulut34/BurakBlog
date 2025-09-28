@@ -195,8 +195,8 @@ flex-shrink: 0; /* küçük ekranda daralmayı engeller */
 
   .card {
     width: 240px;
-    height: 200px;
-    margin: 0 auto; /* sola kaymasın, ortalansın */
+    height: 250px;
+    margin: 0 auto 15px auto; /* altına 15px boşluk */
   }
 
   .btn1 {

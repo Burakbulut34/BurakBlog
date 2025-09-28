@@ -1,0 +1,138 @@
+/* Genel kapsayıcı */
+.project-details {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  color: #f3f4f6;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Başlık */
+.project-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+color: #fff;
+}
+
+/* Resim */
+.project-image {
+  width: 100%;
+  height: 400px;
+  max-width: 1000px;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+/* Açıklama */
+.project-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #d1d5db;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Link butonları */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  transform: translateY(-3px);
+}
+
+/* Geri dön linki */
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #9ca3af;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.back-link:hover {
+  color: #f9fafb;
+}
+
+/* --- Responsive Tasarım --- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .project-title {
+    font-size: 2rem;
+  }
+  .project-description {
+    font-size: 1rem;
+  }
+}
+
+/* Küçük Tablet */
+@media (max-width: 768px) {
+  .project-details {
+    padding: 1.5rem;
+  }
+  .project-title {
+    font-size: 1.8rem;
+  }
+  .project-image {
+    max-width: 420px;
+  }
+}
+
+/* Telefon */
+@media (max-width: 450px) {
+  .project-title {
+    font-size: 1.6rem;
+  }
+  .project-description {
+    font-size: 0.95rem;
+  }
+  .project-links {
+    flex-direction: column;
+  }
+  .project-links a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Küçük Telefon */
+@media (max-width: 387px) {
+  .project-title {
+    font-size: 1.4rem;
+  }
+  .project-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .project-description {
+    font-size: 0.9rem;
+  }
+}
