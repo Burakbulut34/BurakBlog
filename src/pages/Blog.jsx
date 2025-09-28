@@ -53,7 +53,10 @@ const BlogSection = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="center-wrapper">
-          <h1 className="highlight">Merhaba, Ben</h1>
+          <h1 className="highlight">
+  <span className="first">Merhaba,</span> <span className="second">Ben</span>
+</h1>
+
           <h1
             className="animated-text"
             style={{ minWidth: `${maxLength}ch` }}
