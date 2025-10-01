@@ -6,6 +6,9 @@ import "../App.css";
 import AboutMe from './AboutMe';
 import Abilities from "./AbPu"
 import ProjectsPage from './Projects';
+import MyExpreience from "./MyExpe";
+import Contact from './Contact';
+import Footer from '../components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -16,6 +19,9 @@ const Home = () => {
     <AboutMe/>
     <Abilities/>
     <ProjectsPage/>
+    <MyExpreience/>
+    <Contact/>
+    <Footer/>
     </div>
     </>
   )

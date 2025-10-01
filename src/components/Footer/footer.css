@@ -1,0 +1,81 @@
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 15px 30px;
+  position: relative;
+}
+
+/* ✅ Tam oturan HR */
+.footer-divider {
+  border: none;
+  height: 1px;
+  width: 100vw;             /* viewport genişliği kadar */
+  margin: 0 0 20px 0;
+  background: gray  ;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);  /* padding etkisini sıfırlar */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left .name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-left .highlight {
+    font-size: 1rem;
+  color: #ffcc00;
+  font-weight: 500;
+}
+
+.footer-right p {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ✅ Responsive */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .footer-right p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-left .name {
+    font-size: 0.9rem;
+  }
+  .footer-right p {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 387px) {
+  .footer-left .name {
+    font-size: 0.85rem;
+  }
+  .footer-right p {
+    font-size: 0.75rem;
+  }
+}
