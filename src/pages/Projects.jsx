@@ -49,7 +49,8 @@ export const projectsData = [
     description: "Modern bir ofis kiralama. Reactjs ve CSS3 ile geliştirilen kullanıcı dostu bir web sitesidir.",
     image: Projectİmg1,
     type: "web",
-    githubUrl: "https://github.com/Burakbulut34/BurakOfis-Resonsive-Site"
+    githubUrl: "https://github.com/Burakbulut34/BurakOfis-Resonsive-Site",
+    live:"https://burak-ofis-resonsive-site.vercel.app/"
   },
   {
     id: 2,
@@ -57,7 +58,8 @@ export const projectsData = [
     description: "Modern bir soru çözme.",
     image: Projectİmg2,
     type: "web",
-    githubUrl: "https://github.com/example/foto"
+    githubUrl: "https://github.com/Burakbulut34/EduSkill",
+    live: "https://edu-skill.vercel.app/home"
   },
   {
     id: 3,
