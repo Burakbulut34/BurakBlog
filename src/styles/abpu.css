@@ -186,7 +186,7 @@ flex-shrink: 0; /* küçük ekranda daralmayı engeller */
 }
 
 /* Responsive (Çok küçük mobil ekranlar: max 387px) */
-@media (max-width: 387px) {
+@media (max-width: 370px) {
   .box-container {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* daha küçük kartlar */
     gap: 10px;
