@@ -32,8 +32,8 @@ const experiences = [
 
 export default function ExperienceEducation() {
   return (
-    <section className="timeline" id="experience">
-      <h2 className="timeline-title">
+    <section className="timeline">
+      <h2 className="timeline-title" id="experience">
         Deneyimlerim & <span>Eğitimlerim</span>
       </h2>
       <div className="timeline-container">
