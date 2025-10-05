@@ -93,7 +93,7 @@ const Header = () => {
         {navLinks.map((link, idx) => (
           <li key={idx}>
             <ScrollLink
-              to={link.href}
+              onClick={() => scrollToSection(link.href.replace("#", ""))}
               smooth={true}
               duration={500}
               offset={-70}
