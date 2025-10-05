@@ -56,9 +56,8 @@ const Header = () => {
       {navLinks.map((link, idx) => (
         <motion.a
           key={idx}
-          href={link.href}
           className="nav-item"
-          onClick={() => scrollToSection(link.href)}
+           onClick={() => scrollToSection(link.href.replace("#", ""))}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: idx * 0.1 }}
