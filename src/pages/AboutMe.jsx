@@ -8,9 +8,9 @@ const About = () => {
   const isInView = useInView(ref, { margin: "-100px" }); // ekranda göründüğünü algılar
 
   return (
-    <div className="about-container" ref={ref} id="aboutme">
+    <div className="about-container" ref={ref} >
       <div className="about-header">
-        <h2 className="about-title">Hakkımda</h2>
+        <h2 className="about-title" id="aboutme">Hakkımda</h2>
         <div className="about-underline"></div>
       </div>
 
