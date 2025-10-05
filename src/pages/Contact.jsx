@@ -43,7 +43,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <h2 className="contact-title">
         İletişime <span>Geç</span>
       </h2>
