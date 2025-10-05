@@ -43,8 +43,8 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact-section" id="contact">
-      <h2 className="contact-title">
+    <section className="contact-section">
+      <h2 className="contact-title" id="contact">
         İletişime <span>Geç</span>
       </h2>
      <div className="hr"></div>
