@@ -16,7 +16,6 @@ const ProjectCard = ({ id, githubUrl, image, title, description }) => {
       className="project-card"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      id="projects"
     >
       <img src={image} alt={title} className="project-image" />
 
@@ -91,7 +90,7 @@ const ProjectsPage = () => {
 
   return (
     <div className="projects-container">
-      <h1 className="page-title">Projelerim</h1>
+      <h1 className="page-title" id="projects">Projelerim</h1>
       <div className="hr"></div>
 
       <nav className="filter-nav">
