@@ -74,7 +74,7 @@ const BlogSection = () => {
 
           <div className="buttons">
             <motion.a
-              href="#iletisim"
+              href="#contact"
               className="btn primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
