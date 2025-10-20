@@ -28,6 +28,7 @@
 .nav-links {
   display: flex;
   gap: 25px;
+  cursor: pointer;
 }
 
 .nav-item {
