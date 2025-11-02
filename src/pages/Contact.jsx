@@ -80,8 +80,8 @@ export default function Contact() {
 
         {/* İletişim Bilgileri */}
         <div className="contact-info">
-          <h3>Bana Ulaş</h3>
-          <p><Mail size={18}/> example@mail.com</p>
+          <h3>İletişim Bilgileri</h3>
+          <p><Mail size={18}/> burakbltu2007@gmail.com</p>
           <p><Phone size={18}/> +90 555 555 55 55</p>
           <p><MapPin size={18}/> İstanbul, Türkiye</p>
 
