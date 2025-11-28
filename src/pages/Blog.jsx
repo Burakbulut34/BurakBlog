@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "../styles/blog.css";
-import Logo from "../assets/hero-image.png"
+import Logo from "https://res.cloudinary.com/dazvkvpch/image/upload/v1764330939/hero-img.png"
+//../assets/hero-image.png
 const BlogSection = () => {
   const tags = ["Burak Bulut", "Web Developer", "Front - end Developer", "Back - end Developer"];
   const [text, setText] = useState("");
